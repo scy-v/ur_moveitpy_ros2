@@ -1,6 +1,6 @@
 # MoveIt2 with ROS2 Humble (Moveit_py Python API)
 
-🔹 **This repository demonstrates how to use MoveIt2 with ROS2 Humble via the `moveit_py` interface to control robot.**  
+🔹 **This repository demonstrates how to use MoveIt2 with ROS2 Humble via the `moveit_py` interface.**  
 🔹 **If you have all the hardware and want to use the full functionality, you should complete the optional steps.**
 
 ## Table of Contents
