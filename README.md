@@ -10,7 +10,6 @@
 - [**4. Intel Realsense ROS2 Configuration (Optional) ⚡**](#4-intel-realsense-ros2-configuration-optional-)
 - [**5. DH Gripper ROS2 Configuration (Optional) ⚡**](#5-dh-gripper-ros2-configuration-optional-)
 - [**6. One-Command Launch (Optional) ⚡**](#6-one-command-launch-optional-)
-- [**Acknowledgements ⚡**](#acknowledgements-)
 ---
 
 # 1. Install MoveIt2 with Moveit_py ⚡ 
