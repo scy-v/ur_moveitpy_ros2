@@ -1,21 +1,19 @@
-# MoveIt2 with ROS2 Humble (Moveit_py Python Interface)
+# MoveIt2 with ROS2 Humble (Moveit_py Python API)
 
 🔹 **This repository demonstrates how to use MoveIt2 with ROS2 Humble via the `moveit_py` interface to control robot.**  
 🔹 **If you have all the hardware and want to use the full functionality, you should complete the optional steps.**
 
 ## Table of Contents
-- [MoveIt2 with ROS2 Humble (Moveit\_py Python Interface)](#moveit2-with-ros2-humble-moveit_py-python-interface)
-  - [Table of Contents](#table-of-contents)
 - [1. Install MoveIt2 with Moveit\_py](#1-install-moveit2-with-moveit_py)
 - [2. Example: MoveIt\_py for UR Robots](#2-example-moveit_py-for-ur-robots)
 - [3. UR Robot Driver \& MoveIt2 Launch (Optional)](#3-ur-robot-driver--moveit2-launch-optional)
 - [4. Intel Realsense ROS2 Configuration (Optional)](#4-intel-realsense-ros2-configuration-optional)
 - [5. DH Gripper ROS2 Configuration (Optional)](#5-dh-gripper-ros2-configuration-optional)
-- [6. One-Command Launch (All Configurations) ⚡](#6-one-command-launch-all-configurations-)
+- [6. One-Command Launch (All Configurations)](#6-one-command-launch-all-configurations-)
 
 ---
 
-# 1. Install MoveIt2 with Moveit_py 
+# 1. Install MoveIt2 with Moveit_py ⚡ 
 
 🔹 **Follow these steps to set up MoveIt2 in your ROS2 Humble:**
 
@@ -45,7 +43,7 @@ source ~/.bashrc
 
 ---
 
-# 2. Example: MoveIt_py for UR Robots 
+# 2. Example: MoveIt_py for UR Robots ⚡ 
 
 Follow these steps to try an example with a UR robot:
 
@@ -72,7 +70,7 @@ ros2 launch ur_manipulation ur_demo.launch.py
 
 ---
 
-# 3. UR Robot Driver & MoveIt2 Launch (Optional) 
+# 3. UR Robot Driver & MoveIt2 Launch (Optional) ⚡ 
 
 If you want to control the real UR robot, follow these steps:
 
@@ -101,7 +99,7 @@ ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=<ur_type> launch_rviz:
 
 ---
 
-# 4. Intel Realsense ROS2 Configuration (Optional) 
+# 4. Intel Realsense ROS2 Configuration (Optional) ⚡ 
 
 If you want to use the Realsense camera (e.g., D435i) with ROS2:
 
@@ -128,7 +126,7 @@ ros2 launch rs_ros2 eye2hand.launch.py
 
 ---
 
-# 5. DH Gripper ROS2 Configuration (Optional) 
+# 5. DH Gripper ROS2 Configuration (Optional) ⚡
 
 To use the DH Gripper with ROS2:
 
