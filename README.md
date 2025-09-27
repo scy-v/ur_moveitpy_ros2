@@ -1,9 +1,23 @@
 # MoveIt2 with ROS2 Humble (Moveit_py Python Interface)
 
-- This repository demonstrates how to use MoveIt2 with ROS2 Humble via the `moveit_py` Python interface to control a robot.
-- If you have all the hardware and want to use the full functionality, you should complete all the optional steps below.
+🔹 **This repository demonstrates how to use MoveIt2 with ROS2 Humble via the `moveit_py` interface to control robot.**  
+🔹 **If you have all the hardware and want to use the full functionality, you should complete the optional steps.**
 
-# 1. Install MoveIt2 with Moveit_py
+## Table of Contents
+- [MoveIt2 with ROS2 Humble (Moveit\_py Python Interface)](#moveit2-with-ros2-humble-moveit_py-python-interface)
+  - [Table of Contents](#table-of-contents)
+- [1. Install MoveIt2 with Moveit\_py](#1-install-moveit2-with-moveit_py)
+- [2. Example: MoveIt\_py for UR Robots](#2-example-moveit_py-for-ur-robots)
+- [3. UR Robot Driver \& MoveIt2 Launch (Optional)](#3-ur-robot-driver--moveit2-launch-optional)
+- [4. Intel Realsense ROS2 Configuration (Optional)](#4-intel-realsense-ros2-configuration-optional)
+- [5. DH Gripper ROS2 Configuration (Optional)](#5-dh-gripper-ros2-configuration-optional)
+- [6. One-Command Launch (All Configurations) ⚡](#6-one-command-launch-all-configurations-)
+
+---
+
+# 1. Install MoveIt2 with Moveit_py 
+
+🔹 **Follow these steps to set up MoveIt2 in your ROS2 Humble:**
 
 ```bash
 # Create workspace and clone MoveIt2
@@ -14,8 +28,11 @@ cd moveit2
 # Checkout pull request for moveit_py in ROS2 Humble
 git fetch origin pull/3487/head:pr-3487
 git checkout pr-3487
+```
 
-# Build the workspace
+🛠️ **Build the workspace:**
+
+```bash
 cd ~/moveit2_ws
 colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
 
@@ -24,11 +41,13 @@ echo "source ~/moveit2_ws/install/setup.sh" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-**Now you are ready to use the `moveit_py` Python API to control your robots via `move_group`.**
+💡 **Tip:** Now you can use the `moveit_py` Python API to control your robots via `move_group`.
 
 ---
 
-# 2. Example: MoveIt_py for UR Robots
+# 2. Example: MoveIt_py for UR Robots 
+
+Follow these steps to try an example with a UR robot:
 
 ```bash
 # Create workspace and clone example
@@ -43,17 +62,17 @@ colcon build --symlink-install
 echo "source ~/ur_ws/install/setup.sh" >> ~/.bashrc
 ```
 
-**Launch the example** (if you have configured the UR Robot):
+✅ **Launch the example** (if you have configured the UR Robot):
 
 ```bash
 ros2 launch ur_manipulation ur_demo.launch.py
 ```
 
-You can also refer to the Python scripts `ur_demo.py` or `movepy_template.py` inside `ur_manipulation` for MoveIt_py usage.
+💡 **Tip:** You can refer to the Python scripts `ur_demo.py` or `movepy_template.py` inside `ur_manipulation` for MoveIt_py usage.
 
 ---
 
-# 3. UR Robot Driver & MoveIt2 Launch (Optional)
+# 3. UR Robot Driver & MoveIt2 Launch (Optional) 
 
 If you want to control the real UR robot, follow these steps:
 
@@ -73,7 +92,7 @@ cd ~/ur_ws
 colcon build --symlink-install
 ```
 
-**Launch the real UR robot in Rviz using MoveIt2:**
+✅ **Launch the real UR robot in Rviz using MoveIt2:**
 
 ```bash
 ros2 launch ur_robot_driver <ur_type>.launch.py robot_ip:=<robot_ip> launch_rviz:=false
@@ -82,9 +101,9 @@ ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=<ur_type> launch_rviz:
 
 ---
 
-# 4. Intel Realsense ROS2 Configuration (Optional)
+# 4. Intel Realsense ROS2 Configuration (Optional) 
 
-If you want to use the Realsense camera (e.g. D435i) with ROS2:
+If you want to use the Realsense camera (e.g., D435i) with ROS2:
 
 1. Install [Realsense SDK](https://github.com/IntelRealSense/librealsense) first.
 2. Clone the ROS2 package:
@@ -95,13 +114,13 @@ git clone -b ros2-master https://github.com/IntelRealSense/realsense-ros.git
 colcon build --symlink-install
 ```
 
-**Launch the Realsense camera from rs_ros2 pkg:**
+✅ **Launch the Realsense camera from rs_ros2 package:**
 
 ```bash
 ros2 launch rs_ros2 realsense_launch.py
 ```
 
-**Eye-to-hand calibration** (compute pose between camera and robot):
+✅ **Eye-to-hand calibration** (compute pose between camera and robot):
 
 ```bash
 ros2 launch rs_ros2 eye2hand.launch.py
@@ -109,7 +128,7 @@ ros2 launch rs_ros2 eye2hand.launch.py
 
 ---
 
-# 5. DH Gripper ROS2 Configuration (Optional)
+# 5. DH Gripper ROS2 Configuration (Optional) 
 
 To use the DH Gripper with ROS2:
 
@@ -120,7 +139,7 @@ ros2 launch dh_gripper_ros2 dh_gripper.launch.py
 
 ---
 
-# 6. One-Command Launch (All Configurations)
+# 6. One-Command Launch (All Configurations) ⚡
 
 Once all optional setups are complete, you can start everything with a single command:
 
@@ -128,3 +147,5 @@ Once all optional setups are complete, you can start everything with a single co
 cd <ur_sh_folder>
 bash start_ur.sh
 ```
+
+💡 **Tip:** Make sure all required hardware and configurations are ready before running this command.
