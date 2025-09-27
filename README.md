@@ -9,7 +9,7 @@
 - [3. UR Robot Driver \& MoveIt2 Launch (Optional)](#3-ur-robot-driver--moveit2-launch-optional)
 - [4. Intel Realsense ROS2 Configuration (Optional)](#4-intel-realsense-ros2-configuration-optional)
 - [5. DH Gripper ROS2 Configuration (Optional)](#5-dh-gripper-ros2-configuration-optional)
-- [6. One-Command Launch (Optional)](#6-one-command-launch-all-configurations-)
+- [6. One-Command Launch (Optional)](#6-one-command-launch-optional)
 
 ---
 
