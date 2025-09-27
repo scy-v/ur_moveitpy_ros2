@@ -4,13 +4,14 @@
 🔹 **If you have all the hardware and want to use the full functionality, you should complete the optional steps.**
 
 ## Table of Contents
-- [1. Install MoveIt2 with Moveit\_py](#1-install-moveit2-with-moveit_py)
-- [2. Example: MoveIt\_py for UR Robots](#2-example-moveit_py-for-ur-robots)
-- [3. UR Robot Driver \& MoveIt2 Launch (Optional)](#3-ur-robot-driver--moveit2-launch-optional)
-- [4. Intel Realsense ROS2 Configuration (Optional)](#4-intel-realsense-ros2-configuration-optional)
-- [5. DH Gripper ROS2 Configuration (Optional)](#5-dh-gripper-ros2-configuration-optional)
-- [6. One-Command Launch (Optional)](#6-one-command-launch-all-configurations-)
-
+- [MoveIt2 with ROS2 Humble (Moveit\_py Python API)](#moveit2-with-ros2-humble-moveit_py-python-api)
+  - [Table of Contents](#table-of-contents)
+- [1. Install MoveIt2 with Moveit\_py ⚡](#1-install-moveit2-with-moveit_py-)
+- [2. Example: MoveIt\_py for UR Robots ⚡](#2-example-moveit_py-for-ur-robots-)
+- [3. UR Robot Driver \& MoveIt2 Launch (Optional) ⚡](#3-ur-robot-driver--moveit2-launch-optional-)
+- [4. Intel Realsense ROS2 Configuration (Optional) ⚡](#4-intel-realsense-ros2-configuration-optional-)
+- [5. DH Gripper ROS2 Configuration (Optional) ⚡](#5-dh-gripper-ros2-configuration-optional-)
+- [6. One-Command Launch (Optional) ⚡](#6-one-command-launch-optional-)
 ---
 
 # 1. Install MoveIt2 with Moveit_py ⚡ 
